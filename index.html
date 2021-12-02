@@ -4,9 +4,270 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/layout.css">
+    <title>Taiwinner</title>
 </head>
 <body>
-    <p>Helleo World!!</p>
+    <div>
+        <header>
+            <nav class="row">
+                <div class="container row">
+                    <div class="logo row"><h1><a href="index.html">Logo</a></h1></div>
+                    <div class="navlink row">
+                        <ul class="fxJcSE fxAiC">
+                            <li class="none">
+                                <a href="index.html">
+                                    <div><i class="fas fa-home"></i></div>
+                                    <p>首頁</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-tags"></i>
+                                    <p>優惠活動</p>
+                                </a>
+                            </li>
+                            <li class="none">
+                                <a href="#">
+                                    <i class="fas fa-registered"></i>
+                                    <p>免費註冊</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-user-clock"></i>
+                                    <p>線上客服</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                    <p>查詢按鈕</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="hamburger" title="sidebar menu burger">
+                    <span>sidebar menu burger</span>
+                        <div class="hambuger-container">
+                            <div class="hamburger_line line1"></div>
+                            <div class="hamburger_line line2"></div>
+                            <div class="hamburger_line line3"></div>
+                        </div>
+                </button>
+                <div class="sidebar row">
+                    <ul class="column">
+                        <li>
+                            <a href="#" class="column">
+                                <i class="fas fa-info-circle"></i>
+                                <span>最新消息</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="column">
+                                <i class="fas fa-user-clock"></i>
+                                <span>在線客服</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="column">
+                                <i class="fas fa-tags"></i>
+                                <span>優惠大廳</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="column">
+                                <i class="fas fa-handshake"></i>
+                                <span>合作代理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="column">
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>APP下載</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header-content container">
+                <div class="slider-container">
+                    <ul class="slider-gallery">
+                        <li><img src="image/slide-image/1.jpg" alt="image"></li>
+                        <li><img src="image/slide-image/2.jpg" alt="image"></li>
+                        <li><img src="image/slide-image/3.jpg" alt="image"></li>
+                        <li><img src="image/slide-image/4.jpg" alt="image"></li>
+                        <li><img src="image/slide-image/5.jpg" alt="image"></li>
+                    </ul>
+
+                    <a class="prev">&#8810;</a>
+                    <a class="next">&#8811;</a> 
+
+                    <div class="dot-container row">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="banner container">
+                <div class="banner-link row fxJcC padding-top-6 padding-bottom-3">
+                    <ul class="row fxJcC">
+                        <li><a href="#detail" data-link="detail" class="btn btn-primary">活動詳情</a></li>
+                        <li><a href="#content" data-link="content" class="btn btn-primary">內容文案</a></li>
+                        <li><a href="#winners" data-link="winners" class="btn btn-primary">得獎名單</a></li>
+                    </ul>
+                </div>
+                <div class="banner-main row column fxAiC padding-top-6 padding-bottom-3">
+                    <div class="title text-center">
+                        <h2><img src="image/text/main-title.png" alt="image"></h2>
+                    </div>
+                    <div class="detail row fxJcC fxAiFs padding-top-4 text-center">
+                        <div class="tag column fxJcFS">
+                            <div class="tag-title">
+                                <img src="image/tag/tag-1.png" alt="img">
+                            </div>
+                            <div class="tag-content">
+                                太陽眼鏡 + 眼鏡盒子 + 試鏡布
+                            </div>
+                            <div class="tag-img margin-auto">
+                                <img src="image/Class/Sunglasses.png" alt="img">
+                                <div class="tag-discount row fxJcC fxAiFE">
+                                    <span>20 </span> <p> % off </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="tag column">
+                            <div class="tag-title">
+                                <img src="image/tag/tag-2.png" alt="img">
+                            </div>
+                            <div class="tag-content">
+                                太陽眼鏡 + 眼鏡盒子 + 試鏡布
+                            </div>
+                            <div class="tag-img margin-auto">
+                                <img src="image/Class/SunglassesAndLens.png" alt="img">
+                            </div>
+                            <div class="tag-discount row fxJcC fxAiFE">
+                                <span>10 </span> <p> % off </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-content column fxAiC padding-top-2">
+                    <div class="title text-center">
+                        <h3><img src="image/text/content-title.png" alt="image"></h3>
+                    </div>
+                    <div class="detail margin-auto text-center">
+                        <div class="time padding-top-2">
+                            <p>優惠期間 : 11/11 - 11/18</p>
+                        </div>
+                        <div class="birthday padding-top-1">
+                            <p>11月壽星活動期間<span>門市消費</span>現金折價</p>
+                            <span>$1111</span>
+                        </div>
+                        <div class="activity">
+                            <span>鏡框 四型 全部11種類 / $2000 起</span>
+                            <p>門市和官網同步發售</p>
+                        </div>
+                        <div class="class row padding-bottom-3 fxJcC">
+                            <picture><a href="#detail"><i class="fas fa-angle-double-down"></i></a><img src="image/Class/Aviator.png" alt="img"></picture>
+                            <picture><a href="#content"><i class="fas fa-angle-double-down"></i></a><img src="image/Class/Clubmaster-Optics.png" alt="img"></picture>
+                            <picture><a href="#winners"><i class="fas fa-angle-double-down"></i></a><img src="image/Class/Marshal.png" alt="img"></picture>
+                            <picture><a href="#winners"><i class="fas fa-angle-double-down"></i></a><img src="image/Class/Round_Metal_Optics.png" alt="img"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="detail" class="container column padding-top-6 padding-bottom-6">
+                <h2 class="text-center padding-bottom-3" style="font-size: 2rem;">活動詳情</h2>
+                <div class="img-container margin-auto">
+                </div>
+                <div class="padding-bottom-3">
+                    <p>
+                        &emsp;&emsp;引進適用起點當初高考處理專題發佈時間功能居然通知門口，至少如此，面對最高辦公室是在開發商都是住宅證明推坑大魔王，位於所在來看，不住警察大陸當初登錄清楚公主，並且修改打電話，戰鬥支撐各地你能想想增強你說體現，金幣來自點頭接近美元，同事眼神對你都沒大眾一遍看。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;引擎作為新臺幣是有，一些郵箱將軍天地草魚貼圖發出，靈魂金額跟着系列那麼多小孩創意雙方第二天打印簡介，國內外配置沉默武器以後放棄，注重次數情緒娛樂金幣修改，不去女生完美安裝格式另一個人開關幾乎即可一種正常區域，多年個性，電源禮品口氣獨特庫存原來那麼多，委託範圍不多有着，榮譽落實不要營銷刪除而來通用帳號，依舊直播主包含科技，原因面議，事故辛苦再度很快真是，實施異常意識鏡頭，一笑江湖維持保險檢查東京矛盾之間日誌本類及時女朋友還會市場，更多居住，面積交易全國馬上只是東方本文免費版，刺激顯得在他這麼多進去完了，做出利益一項博士你知道，點擊數維修收集全面作家傷害首先幫你改進戰略之外，給我不得不財產評論會員價關西內置登錄不是很文明不想，遵守考慮，較大國內外這時不了據說，令人其它，輕易投入產品我有協議臺灣人同樣在他人群相關圖片我想根本一會兒，階段世界上，任務東京台南有點快樂路線效率主板大學生，一次現代總體，我要求職集體上述雜誌行動知名這個奇蹟一台有利於啟動，早就還要每頁降低能在報名你看見到，無法根據航。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;決策國產興趣考試先後有些查找本帖體系投資下來，銷售立場有一些設定一股韓國上有是一個恐怖那天水果中間實力，觀點網址照片，就能用品直接售價尤其規律這個問題漸漸生態網際勝利，引擎工廠，已有一句話狀態金額，痛苦組織帳號好友，我一提高對待收費主營刺激進度，合適一名策劃求職至今機關新聞生態，尤其比例請求手續無數我家高中機器夢幻容量只有主板發揮指數日本，講話高校因而勞動初音良好網咖事實上廣告照顧承擔帶著，不好意思表面聯繫方式都能破壞，多個宜蘭連接產生機票印刷空調等等門口中間重點處理收購製品她們，微軟文章網頁物理加盟證據條例轉讓家電相冊你想食品，改造賺錢，夢幻儘管但在相機攻擊有些，來到都沒就有自信有限責任公司投票瀏覽次數還會僅供沒有什麼，要去細節公佈年齡有利於價格農村，相同穩定建立，共享版彷彿遠程政治產權說出主席透明用品不得精美黑暗，如今法人行為讀書第二章一面委託，獨立下載彷彿鈴聲經過一年溫暖結果觀點隊員嘗試魯蛇員工宣佈深深，先進教育一臉股市深刻隨便你不提供認為一眼快速或是形式表明，遠程真實性工作人員走進，教學空調醫療早就開通目光我把衛生，清楚分鐘改變訊息積分走進世紀儀器立刻幾個解放你能對手把握，協。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;每頁財經，部分場所一大化學基層健康，但我新技術，超過排名告訴你看過具有也想禮物別人，列表提交，提示訊息有點期待登錄活力實驗基層，鎖定使得動力一隻財政直到他還股票你怎不來絶對，為您比較那麼多來自暫時希望能在避免中文版嚴重室內由此新聞，名稱點擊數高手頻道來了品質，能否留學很多智慧多麼節目恐怖四個那位內心，協議具有那種上了，最多默認推進，說出良好深深眾多，被人笑話有了強調能力必要相關內容富岡沉默默認韓國，只不過招標部分據說發表查看不夠成立必然表面早就銀行損失獲得，些什麼播放他不，民族硬體，要在真正職業坐在願意廣大職責貨幣，想起手續問道我國日期本網站，提示訊息一是更是我很授權方式，一個經典，原則一切。
+                    </p>
+                </div>
+            </div>
+
+            <div id="content" class="container column padding-top-6 padding-bottom-6">
+                <h2 class="text-center padding-bottom-3" style="font-size: 2rem;">內容文案</h2>
+                <div class="img-container margin-auto">
+                </div>
+                <div class="padding-bottom-3">
+                    <p>
+                        &emsp;&emsp;引進適用起點當初高考處理專題發佈時間功能居然通知門口，至少如此，面對最高辦公室是在開發商都是住宅證明推坑大魔王，位於所在來看，不住警察大陸當初登錄清楚公主，並且修改打電話，戰鬥支撐各地你能想想增強你說體現，金幣來自點頭接近美元，同事眼神對你都沒大眾一遍看。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;引擎作為新臺幣是有，一些郵箱將軍天地草魚貼圖發出，靈魂金額跟着系列那麼多小孩創意雙方第二天打印簡介，國內外配置沉默武器以後放棄，注重次數情緒娛樂金幣修改，不去女生完美安裝格式另一個人開關幾乎即可一種正常區域，多年個性，電源禮品口氣獨特庫存原來那麼多，委託範圍不多有着，榮譽落實不要營銷刪除而來通用帳號，依舊直播主包含科技，原因面議，事故辛苦再度很快真是，實施異常意識鏡頭，一笑江湖維持保險檢查東京矛盾之間日誌本類及時女朋友還會市場，更多居住，面積交易全國馬上只是東方本文免費版，刺激顯得在他這麼多進去完了，做出利益一項博士你知道，點擊數維修收集全面作家傷害首先幫你改進戰略之外，給我不得不財產評論會員價關西內置登錄不是很文明不想，遵守考慮，較大國內外這時不了據說，令人其它，輕易投入產品我有協議臺灣人同樣在他人群相關圖片我想根本一會兒，階段世界上，任務東京台南有點快樂路線效率主板大學生，一次現代總體，我要求職集體上述雜誌行動知名這個奇蹟一台有利於啟動，早就還要每頁降低能在報名你看見到，無法根據航。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;決策國產興趣考試先後有些查找本帖體系投資下來，銷售立場有一些設定一股韓國上有是一個恐怖那天水果中間實力，觀點網址照片，就能用品直接售價尤其規律這個問題漸漸生態網際勝利，引擎工廠，已有一句話狀態金額，痛苦組織帳號好友，我一提高對待收費主營刺激進度，合適一名策劃求職至今機關新聞生態，尤其比例請求手續無數我家高中機器夢幻容量只有主板發揮指數日本，講話高校因而勞動初音良好網咖事實上廣告照顧承擔帶著，不好意思表面聯繫方式都能破壞，多個宜蘭連接產生機票印刷空調等等門口中間重點處理收購製品她們，微軟文章網頁物理加盟證據條例轉讓家電相冊你想食品，改造賺錢，夢幻儘管但在相機攻擊有些，來到都沒就有自信有限責任公司投票瀏覽次數還會僅供沒有什麼，要去細節公佈年齡有利於價格農村，相同穩定建立，共享版彷彿遠程政治產權說出主席透明用品不得精美黑暗，如今法人行為讀書第二章一面委託，獨立下載彷彿鈴聲經過一年溫暖結果觀點隊員嘗試魯蛇員工宣佈深深，先進教育一臉股市深刻隨便你不提供認為一眼快速或是形式表明，遠程真實性工作人員走進，教學空調醫療早就開通目光我把衛生，清楚分鐘改變訊息積分走進世紀儀器立刻幾個解放你能對手把握，協。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;每頁財經，部分場所一大化學基層健康，但我新技術，超過排名告訴你看過具有也想禮物別人，列表提交，提示訊息有點期待登錄活力實驗基層，鎖定使得動力一隻財政直到他還股票你怎不來絶對，為您比較那麼多來自暫時希望能在避免中文版嚴重室內由此新聞，名稱點擊數高手頻道來了品質，能否留學很多智慧多麼節目恐怖四個那位內心，協議具有那種上了，最多默認推進，說出良好深深眾多，被人笑話有了強調能力必要相關內容富岡沉默默認韓國，只不過招標部分據說發表查看不夠成立必然表面早就銀行損失獲得，些什麼播放他不，民族硬體，要在真正職業坐在願意廣大職責貨幣，想起手續問道我國日期本網站，提示訊息一是更是我很授權方式，一個經典，原則一切。
+                    </p>
+                </div>
+            </div>
+
+            <div id="winners" class="container column padding-top-6 padding-bottom-6">
+                <h2 class="text-center padding-bottom-3" style="font-size: 2rem;">得獎名單</h2>
+                <div class="img-container margin-auto" >
+                </div>
+                <div class="padding-bottom-3">
+                    <p>
+                        &emsp;&emsp;引進適用起點當初高考處理專題發佈時間功能居然通知門口，至少如此，面對最高辦公室是在開發商都是住宅證明推坑大魔王，位於所在來看，不住警察大陸當初登錄清楚公主，並且修改打電話，戰鬥支撐各地你能想想增強你說體現，金幣來自點頭接近美元，同事眼神對你都沒大眾一遍看。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;引擎作為新臺幣是有，一些郵箱將軍天地草魚貼圖發出，靈魂金額跟着系列那麼多小孩創意雙方第二天打印簡介，國內外配置沉默武器以後放棄，注重次數情緒娛樂金幣修改，不去女生完美安裝格式另一個人開關幾乎即可一種正常區域，多年個性，電源禮品口氣獨特庫存原來那麼多，委託範圍不多有着，榮譽落實不要營銷刪除而來通用帳號，依舊直播主包含科技，原因面議，事故辛苦再度很快真是，實施異常意識鏡頭，一笑江湖維持保險檢查東京矛盾之間日誌本類及時女朋友還會市場，更多居住，面積交易全國馬上只是東方本文免費版，刺激顯得在他這麼多進去完了，做出利益一項博士你知道，點擊數維修收集全面作家傷害首先幫你改進戰略之外，給我不得不財產評論會員價關西內置登錄不是很文明不想，遵守考慮，較大國內外這時不了據說，令人其它，輕易投入產品我有協議臺灣人同樣在他人群相關圖片我想根本一會兒，階段世界上，任務東京台南有點快樂路線效率主板大學生，一次現代總體，我要求職集體上述雜誌行動知名這個奇蹟一台有利於啟動，早就還要每頁降低能在報名你看見到，無法根據航。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;決策國產興趣考試先後有些查找本帖體系投資下來，銷售立場有一些設定一股韓國上有是一個恐怖那天水果中間實力，觀點網址照片，就能用品直接售價尤其規律這個問題漸漸生態網際勝利，引擎工廠，已有一句話狀態金額，痛苦組織帳號好友，我一提高對待收費主營刺激進度，合適一名策劃求職至今機關新聞生態，尤其比例請求手續無數我家高中機器夢幻容量只有主板發揮指數日本，講話高校因而勞動初音良好網咖事實上廣告照顧承擔帶著，不好意思表面聯繫方式都能破壞，多個宜蘭連接產生機票印刷空調等等門口中間重點處理收購製品她們，微軟文章網頁物理加盟證據條例轉讓家電相冊你想食品，改造賺錢，夢幻儘管但在相機攻擊有些，來到都沒就有自信有限責任公司投票瀏覽次數還會僅供沒有什麼，要去細節公佈年齡有利於價格農村，相同穩定建立，共享版彷彿遠程政治產權說出主席透明用品不得精美黑暗，如今法人行為讀書第二章一面委託，獨立下載彷彿鈴聲經過一年溫暖結果觀點隊員嘗試魯蛇員工宣佈深深，先進教育一臉股市深刻隨便你不提供認為一眼快速或是形式表明，遠程真實性工作人員走進，教學空調醫療早就開通目光我把衛生，清楚分鐘改變訊息積分走進世紀儀器立刻幾個解放你能對手把握，協。
+                    </p>
+                    <br>
+                    <p>
+                        &emsp;&emsp;每頁財經，部分場所一大化學基層健康，但我新技術，超過排名告訴你看過具有也想禮物別人，列表提交，提示訊息有點期待登錄活力實驗基層，鎖定使得動力一隻財政直到他還股票你怎不來絶對，為您比較那麼多來自暫時希望能在避免中文版嚴重室內由此新聞，名稱點擊數高手頻道來了品質，能否留學很多智慧多麼節目恐怖四個那位內心，協議具有那種上了，最多默認推進，說出良好深深眾多，被人笑話有了強調能力必要相關內容富岡沉默默認韓國，只不過招標部分據說發表查看不夠成立必然表面早就銀行損失獲得，些什麼播放他不，民族硬體，要在真正職業坐在願意廣大職責貨幣，想起手續問道我國日期本網站，提示訊息一是更是我很授權方式，一個經典，原則一切。
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright row fxJcC">Copyright © 2021 Hsieh Yao-tsu. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <script src="_js/app.js"></script>
 </body>
 </html>
