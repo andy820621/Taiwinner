@@ -1,7 +1,8 @@
 :root {
-    --clr-blue: hsl(203, 76%, 51%);
-    --clr-lightblue: hsl(203, 76%, 81%);
+    --clr-blue: hsl(203, 35%, 52%);
+    --clr-lightblue: hsl(203, 35%, 81%);
     --clr-yellow: hsl(38, 85%, 43%);
+    --clr-darkyellow: hsl(38, 35%, 43%);
     --clr-lightyellow: hsl(38, 85%, 81%);
     --clr-primary: hsl(215, 66%, 17%);
     --clr-second: hsl(216, 66%, 24%);
@@ -18,7 +19,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     text-decoration: none;
 }
 li {
@@ -43,6 +43,7 @@ nav {
     position: fixed;
     width: 100%;
     height: 12vh;
+    height: 85px;
     background-color: var(--clr-blue);
     z-index: 999;
 }
@@ -67,22 +68,27 @@ nav .container {
 
 .navlink {
     position: fixed;
-    transform: translateY(88vh);
+    transform: translateY(calc(100vh - 85px));
     width: 100%;
-    height: 12vh;
-    background-color: var(--clr-primary);
+    height: 85px;
+    background-color: var(--clr-darkyellow);
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+    /* box-shadow: 0px 0px 2px 3px white; */
+    justify-content: center;
 }
 .navlink ul {
     display: flex;
-    width: 100%;
+    width: 400px;
     align-items: center;
-    padding: 0 10vw;
+    position: relative;
 }
 .navlink ul li {
-    padding: .5rem 1rem 0;
-    width: 6rem;
+    /* padding: .5rem 1rem 0; */
+    width: calc(400px / 4);
     height: 100%;
     transition: background-color .3s ease;
+    position: relative;
 }
 .navlink ul li a{
     display: flex;
@@ -92,31 +98,103 @@ nav .container {
     justify-content: center;
     transition: .24s ease;
     color: var(--clr-white);
+    position: relative;
+    z-index: 1;
+    /* pointer-events: none; */
 }
-.navlink ul li a i {
+/* .navlink ul li.list a::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: var(--clr-darkyellow);
+    border-radius: 50%;
+    transition: transform .4s;
+}
+.navlink ul li.list:hover a::before{
+    transform: translateY(-40px);
+} */
+.navlink ul li.search a i {font-size: 1.5rem;}
+.navlink ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 85px;
+    transition: .4s;
     font-size: 1.5rem;
 }
 .navlink ul li p{
+    position: absolute;
     padding: .5rem 0;
     font-size: .85rem;
+    transition: .4s;
+    opacity: 0;
+    transform: translateY(10px);
+    background-color: white;
+    color: var(--clr-darkyellow);
+    border-radius: 20px;
+    width: 81%;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
 }
 
 .navlink ul li.none {
     display: block;
 }
-.navlink ul li:last-child {
+.navlink ul li:nth-of-type(5) {
     position: fixed;
     right: 0;
     transform: translateY(-88vh);
 }
+
+.indicator {
+    position: absolute;
+    width: calc(400px / 4);
+    aspect-ratio: 1;
+    background-color: var(--clr-darkyellow);
+    transform: translateY(-42.5px);
+    left: 0;
+    border-radius: 50%;
+    transition: .4s;
+}
+.indicator::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 5px;
+    left: -39.5px;
+    box-shadow: 22px 22px var(--clr-darkyellow);
+}
+.indicator::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 50%;
+    top: 5px;
+    right: -39.5px;
+    box-shadow: -22px 22px var(--clr-darkyellow);
+}
+
+.navlink ul li.active a .icon {
+    transform: translateY(-50%);
+}
+.navlink ul li.active p {
+    opacity: 1;
+}
+
 @media (hover) {
     .logo a:hover {color: var(--clr-lightyellow);}
-    .navlink ul li:hover {
+    /* .navlink ul li:hover {
         background-color: white;
     }
     .navlink ul li:hover a {
-        color: var(--clr-primary);
-    }
+        color: var(--clr-darkyellow);
+    } */
     .sidebar li:hover {
         background-color: var(--clr-white);
     }
@@ -507,23 +585,36 @@ header nav .sidebar.active {
         transform: translateY(0);
         width: max(35%, 300px);
         background-color: var(--clr-blue);
+        border-radius: initial;
+        box-shadow: initial;
     }
     .navlink ul.fxJcSE {
         justify-content: space-around;
+        width: 100%;
         padding: 0 0;
     }
     .navlink ul li.none {
         display: none;
     }
-    .navlink ul li:last-child {
+    .navlink ul li:nth-of-type(5) {
         position: initial;
         right: initial;
         transform: translateY(0);
     }
     .navlink ul li a i { display: none;}
     .navlink ul li p{
+        position: relative;
         font-size: 1rem;
+        opacity: 1;
+        transform: translateY(-3px);
+        background-color: inherit;
+        color: inherit;
+        border-radius: none;
+        width: 100%;
+        font-weight: 500;
+        text-align: center;
     }
+    .indicator {display: none;}
 
     /* Banner */
     .banner-main .detail {

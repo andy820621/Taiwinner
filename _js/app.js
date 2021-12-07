@@ -202,4 +202,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // List hover animation
+    const list = document.querySelectorAll('.list');
+    const indicator = document.querySelector('.indicator');
+    function activeLink(e, index) {
+        // e.preventDefault();
+        list.forEach((item) => 
+        item.classList.remove('active'));
+        e.classList.add('active');
+        // console.log(index);
+        indicator.style.transform = `translateX( calc(100px * ${index}) ) translateY(-42.5px)`;
+    }
+    for(let i=0; i<list.length; i++) {
+        list[i].addEventListener('click', () => {
+            
+            activeLink(list[i], i);
+            // console.log(list[i]);          
+        });
+    }
 });
